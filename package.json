@@ -1,0 +1,30 @@
+{
+  "name": "methods-pay-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src --exec babel-node",
+    "build": "babel src -d dist",
+    "start": "node dist"
+  },
+  "keywords": [],
+  "author": "Guntzx",
+  "license": "ISC",
+  "dependencies": {
+    "@paypal/paypal-js": "^5.1.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mercadopago": "^1.5.14",
+    "moongose": "^1.0.0",
+    "stripe": "^10.0.0",
+    "transbank-sdk": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/node": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "nodemon": "^2.0.19"
+  }
+}
